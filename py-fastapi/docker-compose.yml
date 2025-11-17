@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  api:
+    build: .
+    container_name: fastapi-python-314
+    volumes:
+      - .:/code
+    ports:
+      - "8001:8001"
