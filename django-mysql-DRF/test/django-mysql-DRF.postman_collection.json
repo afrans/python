@@ -1,0 +1,79 @@
+{
+	"info": {
+		"_postman_id": "172b16a0-61c9-428f-aa7a-0f7f2e22674f",
+		"name": "django-mysql-DRF",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "65541",
+		"_collection_link": "https://speeding-station-494981.postman.co/workspace/nodejs~28c1affe-3cc2-4303-9aa0-3d4c19d9ffac/collection/65541-172b16a0-61c9-428f-aa7a-0f7f2e22674f?action=share&source=collection_link&creator=65541"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/api/alunos",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/alunos",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"alunos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/alunos",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nome\": \"Carlos\",\r\n  \"idade\": 22,\r\n  \"curso\": \"Direito\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/alunos/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"alunos",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,48 @@
+# ─────────── SISTEMA OPERACIONAL ───────────
+.DS_Store
+Thumbs.db
+
+# ─────────── EDITORES ───────────
+# VSCode
+.vscode/
+*.code-workspace
+
+# JetBrains
+.idea/
+
+# ─────────── LOGS ───────────
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ─────────── NODE / JAVASCRIPT ───────────
+node_modules/
+dist/
+build/
+*.local
+
+# ─────────── PYTHON ───────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.env/
+venv/
+.env*
+*.sqlite3
+
+# ─────────── DOCKER ───────────
+*.pid
+docker-data/
+
+# ─────────── MISC ───────────
+*.tmp
+*.swp
+*.swo
+*.bak
+
+# ─────────── CONFIGURAÇÕES SENSÍVEIS ───────────
+*.env
+.env.*
