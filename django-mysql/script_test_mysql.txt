@@ -1,0 +1,21 @@
+from alunos.models import Aluno
+
+# Criar
+a1 = Aluno.objects.create(nome="Ana", idade=20, curso="Engenharia")
+a2 = Aluno.objects.create(nome="Bruno", idade=25, curso="Sistemas")
+
+# Listar todos
+Alunos = Aluno.objects.all()
+print(Alunos)
+
+# Filtrar
+eng = Aluno.objects.filter(curso="Engenharia")
+for a in eng:
+    print(a.id, a.nome, a.curso)
+
+# Atualizar
+a1.idade = 21
+a1.save()
+
+# Apagar
+a2.delete()
